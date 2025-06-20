@@ -36,7 +36,7 @@ and then pass the rparams dictionary to it
 
 `mk_stellar_template(rparams)`
 
-just fater the `lbl_wrap(rparams)` line 
+just after the `lbl_wrap(rparams)` line 
 
 ### 3. Output
 
