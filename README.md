@@ -28,21 +28,9 @@ pip install astropy numpy scipy
 
 ### 2. Example Usage
 
-```python
-from your_module import mk_stellar_template
-
-rparams = {
-    'DATA_DIR': '/path/to/your/data',
-    'OBJECT_SCIENCE': ['TYC_3980M1081M1', 'HD_123456', ...]
-}
-
-mk_stellar_template(rparams)
-```
-
-- The code expects FITS files in the following locations:
-  - Masks: `{DATA_DIR}/masks/{OBJECT}_full.fits`
-  - Templates: `{DATA_DIR}/templates/Template_{OBJECT}_*.fits`
-- Output CSVs will be written to `{DATA_DIR}/templates/Stellar_{OBJECT}.csv`.
+This code is meant to be used inside an LBL wrap file. Simply import the code at the top of the wrapper file 
+`from template_stellar import mk_stellar_template` and then pass the rparams dictionnary to it `mk_stellar_template(rparams)`
+just before the `lbl_wrap(rparams)` line 
 
 ### 3. Output
 
