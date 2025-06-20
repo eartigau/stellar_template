@@ -15,7 +15,7 @@ This repository provides a Python tool to generate Doppler-corrected stellar tem
 
 ### 1. Requirements
 
-- Python 3.8+
+- Python 3.11
 - `astropy`
 - `numpy`
 - `scipy`
@@ -28,9 +28,15 @@ pip install astropy numpy scipy
 
 ### 2. Example Usage
 
-This code is meant to be used inside an LBL wrap file. Simply import the code at the top of the wrapper file 
-`from template_stellar import mk_stellar_template` and then pass the rparams dictionnary to it `mk_stellar_template(rparams)`
-just before the `lbl_wrap(rparams)` line 
+This code is meant to be used inside an LBL wrap file. Import the code at the top of the wrapper file 
+
+`from template_stellar import mk_stellar_template` 
+
+and then pass the rparams dictionary to it 
+
+`mk_stellar_template(rparams)`
+
+just fater the `lbl_wrap(rparams)` line 
 
 ### 3. Output
 
